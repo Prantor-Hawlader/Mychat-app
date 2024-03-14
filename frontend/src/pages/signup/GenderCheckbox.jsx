@@ -1,0 +1,28 @@
+const GenderCheckbox = () => {
+  return (
+    <div className="flex">
+      <div className="form-control">
+        <label className="label gap-2 cursor-pointer">
+          <span className="label-text text-info">Male </span>
+          <input
+            type="checkbox"
+            defaultChecked
+            className="checkbox checkbox-primary"
+          />
+        </label>
+      </div>
+      <div className="form-control">
+        <label className="label gap-2 cursor-pointer">
+          <span className="label-text text-info">Female </span>
+          <input
+            type="checkbox"
+            defaultChecked
+            className="checkbox checkbox-primary"
+          />
+        </label>
+      </div>
+    </div>
+  );
+};
+
+export default GenderCheckbox;
