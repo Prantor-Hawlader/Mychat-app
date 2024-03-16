@@ -8,7 +8,7 @@ const LogoutButton = () => {
       {!loading ? (
         <GrLogout onClick={logout} className="h-6 w-6 text-white" />
       ) : (
-        <span className="loading loading-spinner"></span>
+        <span className="loading loading-spinner text-info"></span>
       )}
     </div>
   );

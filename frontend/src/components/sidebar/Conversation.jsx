@@ -1,7 +1,7 @@
 const Conversation = () => {
   return (
     <>
-      <div className="flex gap-2 items-center hover:bg-info rounded p-2 py-1 cursor-pointer">
+      <div className="flex gap-2 items-center hover:bg-info rounded p-2 py-1 cursor-pointer mb-2">
         <div className="avatar online">
           <div className="w-12 rounded-full">
             <img
@@ -18,8 +18,6 @@ const Conversation = () => {
           </div>
         </div>
       </div>
-
-      <div className="divider my-0 py-0 h-1" />
     </>
   );
 };

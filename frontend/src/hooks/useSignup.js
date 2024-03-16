@@ -36,6 +36,9 @@ const useSignup = () => {
       });
 
       const data = await res.json();
+      if (data.error) {
+        throw new Error(data.error);
+      }
       localStorage.setItem("chatapp-user", JSON.stringify(data));
       setAuthUser(data);
     } catch (error) {
