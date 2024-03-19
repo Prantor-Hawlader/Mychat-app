@@ -11,6 +11,7 @@ const Message = ({ message }) => {
     ? authUser.profilePic
     : selectedConversation.profilePic;
   const time = extractTime(message.createdAt);
+  const shaking = message.willShake ? "shake" : "";
 
   const bubbleBgColor = fromMe ? "bg-info" : "";
   return (
@@ -20,7 +21,9 @@ const Message = ({ message }) => {
           <img alt="Tailwind CSS chat bubble component" src={profilePic} />
         </div>
       </div>
-      <div className={`chat-bubble text-white ${bubbleBgColor} pb-2`}>
+      <div
+        className={`chat-bubble text-white ${bubbleBgColor} ${shaking} pb-2`}
+      >
         {message.message}
       </div>
       <div className="chat-footer text-white  text-xs flex gap-1 items-center">
